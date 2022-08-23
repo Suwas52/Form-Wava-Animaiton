@@ -104,24 +104,3 @@ body{
     transform: translateY(-30px);
 }
 
-.form-control.success input{
-    border-color: var(--success-color);
-}
-
-.form-control.error input{
-    border-color: var(--error-color);
-    /* font-size: 20px; */
-}
-
-.form-control small {
-    color: var(--error-color);
-    position: absolute;
-    bottom: 10;
-    left: 0;
-    visibility: hidden;
-    font-size: 17px;
-}
-.form-control.error small {
-    visibility: visible;
-    
-}
