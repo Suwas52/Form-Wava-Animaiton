@@ -9,21 +9,23 @@
 </head>
 <body>
     <div class="container">
-        <h1>Please Login</h1>
         <form>
+            <h1>Please Login</h1>
             <div class="form-control">
-                <input type="text" required>
+                <input id="email" type="text" required>
                 <label>Email</label>
+                <small>Error message</small>
             </div>
 
             <div class="form-control">
-                <input type="password" required>
+                <input id="password" type="password" required>
                 <label>Password</label>
+                <small>Error message</small>
             </div>
 
             <button class="btn">Login</button>
 
-            <p class="text">Don't have an account? <a href="#">Register</a></p>
+            <p class="text">Don't have an account? <a href="/Form Validator/index.html">Register</a></p>
         </form>
 
     </div>

@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 
+:root {
+    --success-color:#2ecc71;
+    --error-color:#e74c3c;
+}
+
 *{
     box-sizing: border-box;
 }
+
 
 body{
     background-color: steelblue;
@@ -20,6 +26,7 @@ body{
 .container {
     background-color: rgba(0,0,0,0.4);
     padding: 20px 40px;
+    border-radius: 10px;
 }
 
 .container h1{
@@ -95,4 +102,26 @@ body{
 .form-control input:valid + label span {
     color: lightblue;
     transform: translateY(-30px);
+}
+
+.form-control.success input{
+    border-color: var(--success-color);
+}
+
+.form-control.error input{
+    border-color: var(--error-color);
+    /* font-size: 20px; */
+}
+
+.form-control small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 10;
+    left: 0;
+    visibility: hidden;
+    font-size: 17px;
+}
+.form-control.error small {
+    visibility: visible;
+    
 }
